@@ -1,0 +1,57 @@
+<main class="head-lines">
+  <div class="headlines-container">
+    {{#if results}}
+      <div>
+        <ul class="head-lines-ul">
+          {{#each results}}
+            <li>
+              <section
+                class="headLine"
+                role="contentinfo"
+                aria-label={{title.title}}
+              >
+                <div class="img-container">
+                  <img alt="image of title" src="{{{images.0.url}}}" />
+                </div>
+                <div>
+                  <div class="byline-container">
+                    <a
+                      href="{{location.uri}}"
+                      class="byline-link" 
+                      aria-label="line link"
+                    >{{editorial.byline}}</a></div>
+                  <a
+                    href="location.uri"
+                    class="title"
+                    id={{id}}
+                  >{{title.title}}</a>
+                  <p><a
+                      href="location.uri"
+                      class="summary-link"
+                    >{{summary.excerpt}}</a></p>
+                </div>
+              </section>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="pagination">
+      {{#if previous}}
+        <a class="pagination-icon-left" name="pagination left icon"
+          href="/?page={{previous}}&searchKey={{searchKey}}"  
+        ></a>
+      {{/if}}
+      <span class="pagination-text">Page
+      <strong>{{page}}</strong> of
+      {{pageCount}}</span>
+      {{#if next}}
+        <a class="pagination-icon-right" aria-label="pagination right icon"
+          href="/?page={{next}}&searchKey={{searchKey}}"  
+        ></a>
+      {{/if}}
+    </div>
+    {{else}}
+      <h2> {{ message}} </h2>
+    {{/if}}
+  </div>
+</main>
