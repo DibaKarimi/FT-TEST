@@ -3,7 +3,7 @@ import exphbs from "express-handlebars";
 import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
-import paginationResults from "./util/index.js";
+import pagination from "./util/index.js";
 import path from "path";
 const __dirname = path.resolve();
 
@@ -50,7 +50,7 @@ if (!page || parseInt(page)<= 0){
     });
 }
   if (result.results[0].indexCount) {
-    let results = paginationResults(page, result);
+    let results = pagination(page, result);
     results.searchKey = searchKey;
     res.render("main", results);
   } else {
