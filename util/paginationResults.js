@@ -10,7 +10,7 @@ const paginationResults = (requestPage, data) => {
   const results = {};
   results.pageCount = Math.ceil(totalHeadlines / perPage);
   results.page = page;
-  results.next = end < totalResult ? page + 1 : null;
+  results.next = end < totalHeadlines ? page + 1 : null;
   results.previous = start > 0 ? page - 1 : null;
   results.results =
     perPage >= totalHeadlines ? resultData : resultData.slice(start, end);

@@ -1,5 +1,4 @@
 const paginationResults = (requestPage, data) => {
-  
   const resultData = data.results[0].results;
   const totalResult = data.results[0].indexCount;
   const { maxResults } = data.query.resultContext;
@@ -18,4 +17,4 @@ const paginationResults = (requestPage, data) => {
 
   return results;
 };
-module.exports= paginationResults;
+module.exports = paginationResults;

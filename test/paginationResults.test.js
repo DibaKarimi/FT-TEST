@@ -52,18 +52,15 @@ const mockData = {
   ],
 };
 
-test("", () => {
+test("loading home page", () => {
   requestedPage = 1;
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("pageCount", 7);
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("next", 2);
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("page", 1);
-  expect(paginationResults(requestedPage, mockData)).toHaveProperty(
-    "previous",
-    null
-  );
+  expect(paginationResults(requestedPage, mockData)).toHaveProperty("previous", null);
 });
 
-test("", () => {
+test("loading home page", () => {
   requestedPage = "undefined";
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("pageCount", 7);
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("next", 2);
@@ -71,7 +68,7 @@ test("", () => {
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("previous", null);
 });
 
-test("", () => {
+test("request second page", () => {
   requestedPage = "2";
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("pageCount", 7);
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("next", 3);
@@ -79,7 +76,7 @@ test("", () => {
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("previous", 1);
 });
 
-test("", () => {
+test("request last page", () => {
   requestedPage = "7";
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("pageCount", 7);
   expect(paginationResults(requestedPage, mockData)).toHaveProperty("next", null);

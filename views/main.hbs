@@ -12,14 +12,14 @@
               >
                 <div class="img-container">
                   {{#if images.0.url}}
-                  <img alt="image of title" src="{{{images.0.url}}}" />
+                    <img alt="image of title" src="{{{images.0.url}}}" />
                   {{/if}}
                 </div>
                 <div>
                   <div class="byline-container">
                     <a
                       href="{{location.uri}}"
-                      class="byline-link" 
+                      class="byline-link"
                       aria-label="line link"
                     >{{editorial.byline}}</a></div>
                   <a
@@ -38,22 +38,27 @@
         </ul>
       </div>
       <div class="pagination">
-      {{#if previous}}
-        <a class="pagination-icon-left" name="pagination left icon"
-          href="/?page={{previous}}&searchKey={{searchKey}}"  
-        ></a>
-      {{/if}}
-      <span class="pagination-text">Page
-      <strong>{{page}}</strong> of
-      {{pageCount}}</span>
-      {{#if next}}
-        <a class="pagination-icon-right" aria-label="pagination right icon"
-          href="/?page={{next}}&searchKey={{searchKey}}"  
-        ></a>
-      {{/if}}
-    </div>
+        {{#if previous}}
+          <a
+            class="pagination-icon-left"
+            name="pagination left icon"
+            href="/?page={{previous}}&searchKey={{searchKey}}"
+          ></a>
+        {{/if}}
+        <span class="pagination-text">Page
+          <strong>{{page}}</strong>
+          of
+          {{pageCount}}</span>
+        {{#if next}}
+          <a
+            class="pagination-icon-right"
+            aria-label="pagination right icon"
+            href="/?page={{next}}&searchKey={{searchKey}}"
+          ></a>
+        {{/if}}
+      </div>
     {{else}}
-      <h2> {{ message}} </h2>
+      <h2> {{message}} </h2>
     {{/if}}
   </div>
 </main>

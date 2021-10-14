@@ -55,7 +55,6 @@ const getPage = (requestedPage, searchKey) => {
 };
 
 app.get("/", async (req, res) => {
-
   const { searchKey, page } = req.query;
   const isFirstPage = !page || parseInt(page) <= 0;
   if (isFirstPage) {
