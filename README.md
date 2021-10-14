@@ -13,6 +13,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#Data flow">Data flow</a></li>
         <li><a href="#Technologies">Technologies</a></li>
       </ul>
     </li>
@@ -25,9 +26,10 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#Sources">Sources</a></li>
+    <li><a href="#Task points">Task points</a></li>
+    <li><a href="#In future ">In future </a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -35,18 +37,18 @@
 
 ![ FT-TEST Screen Shot](./public/images/ScreenShot.png)
 
- This project show 15 headlines in every page.  
+ This project shows 15 headlines in every page.  
 
 * There is a search box for user to search for headlines containing specific words.
-* The App have paginiation and user are be able to click on Next or Previous button.
+* The App has paginiation and user can to click on Next or Previous buttons to navigate between pages.
 * Every headline has link to open the details page.
 
 ### Data flow
 
 1. The user requests the homepage (https://ft-test.herokuapp.com)
-2. The server fetches and renders the page, caching the results for pagination
+2. The server fetches the search results from the FT api and returns the rendered page to the client, caching the results for pagination
 3. The headlines are sliced for the first page and calculate pages count based on per page count.
-4. By clicking the "Next" or "Previous" button, display the next or last slice of headlins.
+4. By clicking the "Next" or "Previous" button, display the next or last slice of headlines.
 5. If the user enter words in the search box and click search icon, the steps 2 and 3 will run again.
 
 
@@ -89,11 +91,11 @@
    ```sh
    npm install
    ```
-4. Enter your API URL in `.env`
+4. env file would be
    ```js
    const API_URL = 'ENTER YOUR API URL';
    ```
-5. Enter your API KEY in `.env`
+5. env file would be
    ```js
    const API_KEY = 'ENTER YOUR API KEY';
    ```
@@ -134,7 +136,7 @@ Project Link: [https://github.com/DibaKarimi/FT-TEST](https://github.com/DibaKar
 
 The project has been built to 
 - Display headlines from the Financial Times
-- Provide search box to search for headlins contaning specific words
+- Provide search box to search for headlines contaning specific words
 - Be responsive
 - be accessible
 - Have pagination
@@ -145,9 +147,10 @@ The project has been built to
 
 ## In future 
 
-I will  
+
 - use Origami components to design the page
-- 
+- Work offline 
+- Progressively enhanced
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
