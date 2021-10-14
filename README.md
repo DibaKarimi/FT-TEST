@@ -47,7 +47,7 @@
 2. The server fetches and renders the page, caching the results for pagination
 3. The headlines are sliced for the first page and calculate pages count based on per page count.
 4. By clicking the "Next" or "Previous" button, display the next or last slice of headlins.
-5. If the user enter words in the search bar and click search icon, the steps 2 and 3 will run again.
+5. If the user enter words in the search box and click search icon, the steps 2 and 3 will run again.
 
 
 
@@ -122,12 +122,32 @@ Diba(somayeh) Karimi - Dibaakarimi@gmail.com
 Project Link: [https://github.com/DibaKarimi/FT-TEST](https://github.com/DibaKarimi/FT-TEST)
 
 ## Sources
-- This project was inspired by 
+
+ - This project was inspired by 
  - https://github.com/ChristianHur/152-150-Web-Programming-2
  - https://www.youtube.com/watch?v=ZX3qt0UWifc
  - https://www.youtube.com/watch?v=FgnxcUQ5vho
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Task points
+
+The project has been built to 
+- Display headlines from the Financial Times
+- Provide search box to search for headlins contaning specific words
+- Be responsive
+- be accessible
+- Have pagination
+- using Javascript and node.js
+- Deployed on Heroku
+- have a similar look and feel as ft.com
+- Have unit test
+
+## In future 
+
+I will  
+- use Origami components to design the page
+- 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
