@@ -1,0 +1,258 @@
+{
+  "pageCount": 10,
+  "page": 1,
+  "next": 2,
+  "previous": null,
+  "results": [
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "c359442d-328a-44e7-856e-d5dad656b08e",
+      "apiUrl": "https://api.ft.com/content/c359442d-328a-44e7-856e-d5dad656b08e",
+      "title": {
+        "title": "Bow and arrow attacker leaves 5 dead in Norwegian town"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/c359442d-328a-44e7-856e-d5dad656b08e"
+      },
+      "summary": {
+        "excerpt": "Norwegian police are investigating a potential terrorist attack after a man killed five people using a bow and..."
+      },
+      "editorial": {
+        "subheading": "Police in Kongsberg say there are ‘grounds to evaluate whether this is a terror attack’",
+        "byline": "Richard Milne in Oslo"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F5a3cb30d-d2da-47f8-996b-c0d9b6434223?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "2252f198-8e1a-4bfa-af00-a608c69ca945",
+      "apiUrl": "https://api.ft.com/content/2252f198-8e1a-4bfa-af00-a608c69ca945",
+      "title": {
+        "title": "UK gas shipping company to stop delivering to retail suppliers"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/2252f198-8e1a-4bfa-af00-a608c69ca945"
+      },
+      "summary": {
+        "excerpt": "A UK company backed by Glencore that supplies natural gas to utility companies has said it can no longer continue its..."
+      },
+      "editorial": {
+        "subheading": "Move by CNG adds to pressure on consumer energy market already reeling from failures",
+        "byline": "Nathalie Thomas in Edinburgh and David Sheppard in London"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F6ed2facd-78e9-491f-b872-5546f2a1048e?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "3b2d3e57-1575-47ed-8442-9b4ee00b36d5",
+      "apiUrl": "https://api.ft.com/content/3b2d3e57-1575-47ed-8442-9b4ee00b36d5",
+      "title": {
+        "title": "Wall Street stocks and Treasuries make gains even as inflation data top 5% again"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/3b2d3e57-1575-47ed-8442-9b4ee00b36d5"
+      },
+      "summary": {
+        "excerpt": "Wall Street stock and bond prices climbed on Wednesday despite data confirming a surge in inflation and the Federal..."
+      },
+      "editorial": {
+        "subheading": "US figures on consumer prices released on Wednesday come in slightly higher than forecast",
+        "byline": "Naomi Rovnick and Nicholas Megaw"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F795fcec3-09dc-4d8c-b63d-4c526b7e1469?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "a8cad0f1-fd85-40ed-aa19-e71728f10825",
+      "apiUrl": "https://api.ft.com/content/a8cad0f1-fd85-40ed-aa19-e71728f10825",
+      "title": {
+        "title": "Pension savers face risk of higher fees as Sunak seeks billions for ‘levelling up’"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/a8cad0f1-fd85-40ed-aa19-e71728f10825"
+      },
+      "summary": {
+        "excerpt": "Ministers are looking to relax rules shielding tens of millions of UK retirement savers from high charges as they step..."
+      },
+      "editorial": {
+        "subheading": "Treasury-driven review of UK workplace pension charge cap hopes to boost investment in areas such as private equity",
+        "byline": "Josephine Cumbo and George Parker"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2Fc5383f06-9be3-4f8d-8761-6d57c2d9672c?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "8055d806-3166-48c9-9786-9bdea0e2d806",
+      "apiUrl": "https://api.ft.com/content/8055d806-3166-48c9-9786-9bdea0e2d806",
+      "title": {
+        "title": "Big US businesses pledge to extend working hours to ease supply chain backlogs"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/8055d806-3166-48c9-9786-9bdea0e2d806"
+      },
+      "summary": {
+        "excerpt": "Joe Biden has secured pledges from Walmart, UPS and FedEx to extend their working hours in a bid to ease supply chain..."
+      },
+      "editorial": {
+        "subheading": "Biden administration secures commitment from Walmart, UPS and FedEx to work round the clock",
+        "byline": "James Politi in Washington and Andrew Edgecliffe-Johnson in New York"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2Faea2e8bc-375a-4d69-96a1-8902f6d3f0c9?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "053c3a21-166a-4c2f-b6f3-335ba70ef6c8",
+      "apiUrl": "https://api.ft.com/content/053c3a21-166a-4c2f-b6f3-335ba70ef6c8",
+      "title": {
+        "title": "Can UK and EU resolve their post-Brexit dispute?"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/053c3a21-166a-4c2f-b6f3-335ba70ef6c8"
+      },
+      "summary": {
+        "excerpt": "Almost three months after the UK demanded far-reaching reform of the Brexit deal’s trading arrangements for Northern..."
+      },
+      "editorial": {
+        "subheading": "Brussels and London remain far apart on key aspects of Northern Ireland’s trading arrangements ",
+        "byline": "Peter Foster in London and Andy Bounds in Brussels"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2Fd45c4dd7-da39-4675-806c-66a06d403375?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "c52493ff-cc51-4e69-b532-acbd0bdee8c4",
+      "apiUrl": "https://api.ft.com/content/c52493ff-cc51-4e69-b532-acbd0bdee8c4",
+      "title": {
+        "title": "Fed poised to begin tapering as early as next month"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/c52493ff-cc51-4e69-b532-acbd0bdee8c4"
+      },
+      "summary": {
+        "excerpt": "The Federal Reserve is poised to begin phasing out its pandemic-era stimulus programme as early as next month and wrap..."
+      },
+      "editorial": {
+        "subheading": "Minutes from September meeting of Federal Open Market Committee indicate stimulus programme could end by mid-2022",
+        "byline": "Colby Smith in Washington"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F92d5c637-6f34-46e1-8783-566bc432785b?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "e5b8ca42-e37b-44da-b72c-1d7641bee0b9",
+      "apiUrl": "https://api.ft.com/content/e5b8ca42-e37b-44da-b72c-1d7641bee0b9",
+      "title": {
+        "title": "Biden paves way for ESG retirement funds in reversal from Trump"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/e5b8ca42-e37b-44da-b72c-1d7641bee0b9"
+      },
+      "summary": {
+        "excerpt": "The Biden administration has proposed a rule that would pave the way for funds pursuing environmental, social and..."
+      },
+      "editorial": {
+        "subheading": "Proposal could ease concerns of US plan managers who consider factors such as climate risk",
+        "byline": "Patrick Temple-West in New York"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F45a03cfd-9f76-45b4-a92e-4f8bbc27909b?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "c4900678-bc9c-4aca-9ad6-fb5b2f1a654b",
+      "apiUrl": "https://api.ft.com/content/c4900678-bc9c-4aca-9ad6-fb5b2f1a654b",
+      "title": {
+        "title": "US household heating bills forecast to jump as fuel prices surge"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/c4900678-bc9c-4aca-9ad6-fb5b2f1a654b"
+      },
+      "summary": {
+        "excerpt": "Americans’ home heating bills will rise sharply this winter, according to a federal government forecast, as a global..."
+      },
+      "editorial": {
+        "subheading": "Energy agency says homes using natural gas will pay 30% more this winter",
+        "byline": "Derek Brower in New York"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F8ea1d45b-6ec3-4151-bfc9-4b2df08d6dc0?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "aspectSet": "article",
+      "modelVersion": "1",
+      "id": "feea45fb-dbcd-4059-b541-e0b6b5c9db51",
+      "apiUrl": "https://api.ft.com/content/feea45fb-dbcd-4059-b541-e0b6b5c9db51",
+      "title": {
+        "title": "UK port disruption spreads, casting shadow over Christmas"
+      },
+      "location": {
+        "uri": "https://www.ft.com/content/feea45fb-dbcd-4059-b541-e0b6b5c9db51"
+      },
+      "summary": {
+        "excerpt": "UK retailers and logistics companies have warned that the supply chain disruptions at Felixstowe are spreading to other..."
+      },
+      "editorial": {
+        "subheading": "Problems accessing Felixstowe now reportedly being felt at facilities like London Gateway and Southampton",
+        "byline": "FT Reporters"
+      },
+      "images": [
+        {
+          "url": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F0a06b712-36d5-4683-8857-f3157962a11c?source=search&fit=scale-down&width=167",
+          "type": "secondary"
+        }
+      ]
+    }
+  ]
+}

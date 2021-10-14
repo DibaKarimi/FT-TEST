@@ -1,4 +1,5 @@
-{
+module.exports = {
+data :{
   "query": {
     "queryContext": {
       "curations": ["ARTICLES", "BLOGS", "PAGES", "PODCASTS", "VIDEOS"]
@@ -2507,4 +2508,5 @@
       ]
     }
   ]
+}
 }

@@ -5,7 +5,7 @@ const paginationResults = (requestPage, data) => {
   const { maxResults } = data.query.resultContext;
   const totalHeadlines = totalResult >= maxResults ? maxResults : totalResult;
   const page = parseInt(requestPage) > 0 ? parseInt(requestPage) : 1;
-  const perPage = 10;
+  const perPage = 15;
   const start = (page - 1) * perPage;
   const end = start + perPage;
   const results = {};
@@ -18,5 +18,4 @@ const paginationResults = (requestPage, data) => {
 
   return results;
 };
-
-export default paginationResults;
+module.exports= paginationResults;
