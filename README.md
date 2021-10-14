@@ -1,6 +1,6 @@
 # FT-TEST
 
-<a href="https://ft-test.herokuapp.com">FT-TEST</a> is a JavaScript and Node.js app for displaying headlines from Financial Times.
+<a href="https://ft-test.herokuapp.com">FT-TEST</a> is a  Node.js app for displaying headlines from Financial Times.
 
 
 
