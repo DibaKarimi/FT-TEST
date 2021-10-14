@@ -33,7 +33,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![ FT-TEST Screen Shot]](./public/images/ScreenShot.png)
+![ FT-TEST Screen Shot](./public/images/ScreenShot.png)
 
  This project show 15 headlines in every page.  
 
