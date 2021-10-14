@@ -11,7 +11,9 @@
                 aria-label={{title.title}}
               >
                 <div class="img-container">
+                  {{#if images.0.url}}
                   <img alt="image of title" src="{{{images.0.url}}}" />
+                  {{/if}}
                 </div>
                 <div>
                   <div class="byline-container">

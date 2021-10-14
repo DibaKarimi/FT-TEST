@@ -3,12 +3,12 @@ import exphbs from "express-handlebars";
 import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
-import pagination from "./util/index.js";
+import pagination from "./util/paginationResults.js";
 import path from "path";
-const __dirname = path.resolve();
 
-const apiKey = process.env.APIKEY;
-const apiUrl = process.env.URL;
+const __dirname = path.resolve();
+const apiKey = process.env.API_KEY;
+const apiUrl = process.env.API_URL;
 const app = express();
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "hbs");
@@ -27,11 +27,11 @@ const listener = app.listen(port, function () {
   console.log("server is listening to the prot: " + listener.address().port);
 });
 
-let result={};
+// cache the latest search for pagination
+let latestSearch = {};
 
-app.get("/", async (req, res) => {
-  const { searchKey, page } = req.query;
-if (!page || parseInt(page)<= 0){
+// fetch data
+const newSearch = async (searchKey) => {
   const data = {
     queryString: searchKey,
     resultContext: {
@@ -39,25 +39,40 @@ if (!page || parseInt(page)<= 0){
     },
   };
   const headers = { "content-type": "application/json", "X-Api-Key": apiKey };
+  try {
+    const response = await axios.post(apiUrl, data, { headers: headers });
+    return response.data;
+  } catch (error) {
+    console.log("AXIOS ERROR: ", err);
+  }
+};
 
-  await axios
-    .post(apiUrl, data, { headers: headers })
-    .then((response) => {
-      result = response.data;
-    })
-    .catch((err) => {
-      console.log("AXIOS ERROR: ", err);
-    });
-}
-  if (result.results[0].indexCount) {
-    let results = pagination(page, result);
-    results.searchKey = searchKey;
-    res.render("main", results);
+// get content of requested page
+const getPage = (requestedPage, searchKey) => {
+  let results = pagination(requestedPage, latestSearch);
+  results.searchKey = searchKey;
+  return results;
+};
+
+app.get("/", async (req, res) => {
+
+  const { searchKey, page } = req.query;
+  const isFirstPage = !page || parseInt(page) <= 0;
+  if (isFirstPage) {
+    latestSearch = await newSearch(searchKey);
+  }
+
+  const isResult = latestSearch.results[0].indexCount;
+  if (isResult) {
+    const data = getPage(page, searchKey);
+    res.render("main", data);
   } else {
     res.render("main", { message: "Sorry, content not found!" });
   }
 });
 
 app.get("*", (req, res) => {
-  res.render("notFound", { message : "The page was not found, please try again!" });
+  res.render("notFound", {
+    message: "The page was not found, please try again!",
+  });
 });
