@@ -19,16 +19,12 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Sources">Sources</a></li>
   </ol>
 </details>
 
@@ -37,13 +33,25 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![ FT-TEST Screen Shot][product-screenshot]](./images/ScreenShot.png)
+[[ FT-TEST Screen Shot]](./public/images/ScreenShot.png)
 
- This project show 10 headlines in every page.  
-
+ This project show 15 headlines in every page.  
 
 * There is a search box for user to search for headlines containing specific words.
-* The App have paginiation and user are be able to click on Next or Previous buttons.
+* The App have paginiation and user are be able to click on Next or Previous button.
+* Every headline has link to open the details page.
+
+### Data flow
+
+1. The user requests the homepage (https://ft-test.herokuapp.com)
+2. The server fetches and renders the page, caching the results for pagination
+3. The headlines are sliced for the first page and calculate pages count based on per page count.
+4. By clicking the "Next" or "Previous" button, display the next or last slice of headlins.
+5. If the user enter words in the search bar and click search icon, the steps 2 and 3 will run again.
+
+
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -51,13 +59,11 @@
 
 ### Technologies
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [HTML](https://html.com/)
 * [CSS](https://www.codecademy.com/learn/learn-css)
 * [JavaScript](https://javascript.info/)
 * [Node.js](https://nodejs.org/en/)
-* [Express](https://svelte.dev/)
 * [Express](https://expressjs.com/)
 * [Handlebars](https://handlebarsjs.com/)
 * [Jest](https://jestjs.io/)
@@ -68,6 +74,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 ## Getting Started
+ 
  
 
 ### Installation
@@ -113,6 +120,12 @@ you are be able change the page by clicking on the next or previous buttons.
 Diba(somayeh) Karimi - Dibaakarimi@gmail.com
 
 Project Link: [https://github.com/DibaKarimi/FT-TEST](https://github.com/DibaKarimi/FT-TEST)
+
+## Sources
+- This project was inspired by 
+ - https://github.com/ChristianHur/152-150-Web-Programming-2
+ - https://www.youtube.com/watch?v=ZX3qt0UWifc
+ - https://www.youtube.com/watch?v=FgnxcUQ5vho
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
