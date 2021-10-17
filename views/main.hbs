@@ -25,7 +25,7 @@
                   <a
                     href="location.uri"
                     class="title"
-                    id={{id}}
+                    id={{@index}}
                   >{{title.title}}</a>
                   <p><a
                       href="location.uri"
@@ -55,8 +55,10 @@
             aria-label="pagination right icon"
             href="/?page={{next}}&searchKey={{searchKey}}"
           ></a>
+          
         {{/if}}
       </div>
+      <button onclick="nextPage({{{next}}},'{{{ searchKey}}}')" class="button next" id="next">next</button>
     {{else}}
       <h2> {{message}} </h2>
     {{/if}}
