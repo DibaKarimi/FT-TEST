@@ -58,7 +58,7 @@
           
         {{/if}}
       </div>
-      <button onclick="nextPage({{{next}}},'{{{ searchKey}}}')" class="button next" id="next">next</button>
+      <button onclick="nextPage('{{this}}',{{next}},'{{{ searchKey}}}')" class="button next" id="next">next</button>
     {{else}}
       <h2> {{message}} </h2>
     {{/if}}

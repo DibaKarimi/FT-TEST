@@ -1,16 +1,21 @@
-import express from "express";
-import exphbs from "express-handlebars";
-import axios from "axios";
-import dotenv from "dotenv";
-dotenv.config();
-import pagination from "./util/paginationResults.js";
-import path from "path";
+const express = require("express");
+const exphbs = require("express-handlebars");
+const app = express();
 
-const __dirname = path.resolve();
+app.use(express.static(__dirname + "/public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+const axios = require ("axios");
+const dotenv =require ("dotenv");
+dotenv.config();
+const pagination= require ("./util/paginationResults");
+
+
+
 const apiKey = process.env.API_KEY;
 const apiUrl = process.env.API_URL;
-const app = express();
-app.use(express.static(__dirname + "/public"));
+
+
 app.set("view engine", "hbs");
 app.engine(
   "hbs",

@@ -1,4 +1,4 @@
-const paginationResults = require("./paginationResults");
+const paginationResults = require("../util/paginationResults");
 const mockData = {
   query: {
     queryContext: {

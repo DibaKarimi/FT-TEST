@@ -17,4 +17,5 @@ const paginationResults = (requestPage, data) => {
 
   return results;
 };
+
 module.exports = paginationResults;
