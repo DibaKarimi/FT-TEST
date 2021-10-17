@@ -1,6 +1,6 @@
 const paginationResults = require("js/paginationResults");
 //import { pagination } from "js/paginationResults";
-function nextPage(data, page, searchKey) {
+function nextPage( page, searchKey ,latestSearch) {
   //const result = paginationResults(page,latestData);
-  console.log(data, page, searchKey, latestSearch);
+  console.log(page, searchKey, latestSearch);
 }

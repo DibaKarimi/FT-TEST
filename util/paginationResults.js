@@ -18,4 +18,4 @@ const paginationResults = (requestPage, data) => {
   return results;
 };
 
-export default paginationResults;
+module.exports= paginationResults;

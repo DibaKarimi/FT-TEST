@@ -1,9 +1,9 @@
 <main class="head-lines">
   <div class="headlines-container">
-    {{#if results}}
+    {{#if data.results}}
       <div>
         <ul class="head-lines-ul">
-          {{#each results}}
+          {{#each data.results}}
             <li>
               <section
                 class="headLine"
@@ -38,20 +38,21 @@
         </ul>
       </div>
       <div class="pagination">
-      {{#if previous}}
+      {{#if data.previous}}
         <a class="pagination-icon-left" name="pagination left icon"
-          href="/?page={{previous}}&searchKey={{searchKey}}"  
+          href="/?page={{data.previous}}&searchKey={{data.searchKey}}"  
         ></a>
       {{/if}}
       <span class="pagination-text">Page
-      <strong>{{page}}</strong> of
-      {{pageCount}}</span>
-      {{#if next}}
+      <strong>{{data.page}}</strong> of
+      {{data.pageCount}}</span>
+      {{#if data.next}}
         <a class="pagination-icon-right" aria-label="pagination right icon"
-          href="/?page={{next}}&searchKey={{searchKey}}"  
+          href="/?page={{data.next}}&searchKey={{data.searchKey}}"  
         ></a>
       {{/if}}
     </div>
+    <button onclick="nextPage {{data.next}} '{{data.searchKey}}' '{{latestSearch}}' " id="next"></button>
     {{else}}
       <h2> {{ message}} </h2>
     {{/if}}
