@@ -1,6 +1,19 @@
-const paginationResults = require("js/paginationResults");
-//import { pagination } from "js/paginationResults";
-function nextPage( page, searchKey ,latestSearch) {
-  //const result = paginationResults(page,latestData);
-  console.log(page, searchKey, latestSearch);
+
+//const paginationResults = require("../../util/paginationResults");
+
+
+
+function nextPage( page ,oldData ) {
+  console.log("oldData",oldData);
+ const result=paginationResults(page,data)
+  oldData=result;
+
 }
+// function fillTemplate() {
+//   console.log("dss");
+//   var template = Handlebars.compile(
+//     document.querySelector("template").innerHTML
+//   );
+//   var filled = template(data);
+//   document.querySelector("#output").innerHTML = filled;
+// }

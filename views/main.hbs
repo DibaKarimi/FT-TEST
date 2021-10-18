@@ -3,7 +3,7 @@
     {{#if data.results}}
       <div>
         <ul class="head-lines-ul">
-          {{#each data.results}}
+          {{#each  data.results}}
             <li>
               <section
                 class="headLine"
@@ -52,9 +52,12 @@
         ></a>
       {{/if}}
     </div>
-    <button onclick="nextPage {{data.next}} '{{data.searchKey}}' '{{latestSearch}}' " id="next"></button>
+   
+
     {{else}}
       <h2> {{ message}} </h2>
     {{/if}}
+     <button onclick="nextPage( {{data.next}} , '{{data}}')" class="button next"
+  id="next">next</button>
   </div>
 </main>
