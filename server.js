@@ -5,10 +5,10 @@ const app = express();
 app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const axios = require ("axios");
-const dotenv =require ("dotenv");
+const axios = require("axios");
+const dotenv = require("dotenv");
 dotenv.config();
-const pagination= require ("./util/paginationResults");
+const pagination = require("./util/paginationResults");
 
 const apiKey = process.env.API_KEY;
 const apiUrl = process.env.API_URL;
@@ -21,9 +21,9 @@ app.engine(
     defaultLayout: "index",
     layoutsDir: __dirname + "/views/layouts",
     partialsDir: __dirname + "/views/partials",
-    helpers :{
-      counter : () =>{}
-    }
+    helpers: {
+      counter: () => {},
+    },
   })
 );
 
@@ -58,9 +58,16 @@ const getPage = (requestedPage, searchKey) => {
   results.searchKey = searchKey;
   return results;
 };
+app.get("/load", async (req, res) => {
+  const { searchKey, page } = req.query;
+  const isFirstPage = !page || parseInt(page) <= 0;
+  if (isFirstPage) {
+    latestSearch = await newSearch(searchKey);
+  }
+  res.json(latestSearch);
+});
 
 app.get("/", async (req, res) => {
-
   const { searchKey, page } = req.query;
   const isFirstPage = !page || parseInt(page) <= 0;
   if (isFirstPage) {
@@ -70,7 +77,7 @@ app.get("/", async (req, res) => {
   const isResult = latestSearch.results[0].indexCount;
   if (isResult) {
     const data = getPage(page, searchKey);
-    res.render("main", {data ,latestSearch});
+    res.render("main", { data , latestSearch });
   } else {
     res.render("main", { message: "Sorry, content not found!" });
   }
