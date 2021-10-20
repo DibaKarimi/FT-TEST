@@ -22,7 +22,16 @@ app.engine(
     layoutsDir: __dirname + "/views/layouts",
     partialsDir: __dirname + "/views/partials",
     helpers: {
-      counter: () => {},
+      json: function (context) {
+        return JSON.stringify(context);
+      },
+      next: function (currentPage) {
+        return currentPage+1;
+      },
+      setHandler: function (newData) {
+        console.log(newData);
+        return getPage(6, "searchKey");
+      },
     },
   })
 );
@@ -77,7 +86,7 @@ app.get("/", async (req, res) => {
   const isResult = latestSearch.results[0].indexCount;
   if (isResult) {
     const data = getPage(page, searchKey);
-    res.render("main", { data , latestSearch });
+    res.render("main", { data, latestSearch });
   } else {
     res.render("main", { message: "Sorry, content not found!" });
   }
