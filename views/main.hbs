@@ -12,7 +12,7 @@
               >
                 <div class="img-container">
                   {{#if images.0.url}}
-                    <img alt="image of title" src="{{{images.0.url}}}" />
+                    <img alt="image of headline" src="{{{images.0.url}}}" />
                   {{/if}}
                 </div>
                 <div>
@@ -25,7 +25,7 @@
                   <a
                     href="location.uri"
                     class="title"
-                    id={{id}}
+                    id={{@index}}
                   >{{title.title}}</a>
                   <p><a
                       href="location.uri"
@@ -55,8 +55,10 @@
             aria-label="pagination right icon"
             href="/?page={{next}}&searchKey={{searchKey}}"
           ></a>
+          
         {{/if}}
       </div>
+     
     {{else}}
       <h2> {{message}} </h2>
     {{/if}}

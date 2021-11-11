@@ -17,7 +17,7 @@ body {
   margin: 15px;
 }
 .logo-image {
-  background-image: url("./images/logo-large.png");
+  background-image: url("../images/logo-large.png");
   height: 70px;
   width: 200px;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ a {
 }
 
 .pagination-icon-left {
-  background-image: url("./images/fticon-v1_arrow-left.svg");
+  background-image: url("../images/fticon-v1_arrow-left.svg");
   padding: 10px 19px;
   width: 36px;
   height: 40px;
@@ -175,7 +175,7 @@ a {
   background-repeat: no-repeat;
 }
 .pagination-icon-right {
-  background-image: url("./images/fticon-v1_arrow-right.svg");
+  background-image: url("../images/fticon-v1_arrow-right.svg");
   padding: 10px 19px;
   width: 36px;
   height: 40px;
