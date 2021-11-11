@@ -12,7 +12,7 @@
               >
                 <div class="img-container">
                   {{#if images.0.url}}
-                    <img alt="image of title" src="{{{images.0.url}}}" />
+                    <img alt="image of headline" src="{{{images.0.url}}}" />
                   {{/if}}
                 </div>
                 <div>
@@ -58,7 +58,7 @@
           
         {{/if}}
       </div>
-      <button onclick="nextPage('{{this}}',{{next}},'{{{ searchKey}}}')" class="button next" id="next">next</button>
+     
     {{else}}
       <h2> {{message}} </h2>
     {{/if}}
