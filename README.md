@@ -138,17 +138,17 @@ The project has been built to
 - Display headlines from the Financial Times
 - Provide search box to search for headlines contaning specific words
 - Be responsive
-- be accessible
+- Be accessible
 - Have pagination
-- using Javascript and node.js
+- Using Javascript and node.js
 - Deployed on Heroku
-- have a similar look and feel as ft.com
+- Have a similar look and feel as ft.com
 - Have unit test
 
 ## In future 
 
 
-- use Origami components to design the page
+- Use Origami components to design the page
 - Work offline 
 - Progressively enhanced
 
